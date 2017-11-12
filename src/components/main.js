@@ -13,7 +13,8 @@ export default class Main extends React.Component {
     render() {
         return (
             <main>
-                <div>
+                <div className="searchbox">
+                <h2><span className="glyphicon glyphicon-globe"></span> Enter URL</h2>
                     <input type="text" className="input--shadow" placeholder=""/>
                     <button className="btn--search">
                         <span className="glyphicon glyphicon-search"></span>
@@ -21,7 +22,7 @@ export default class Main extends React.Component {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <h2><span className="glyphicon glyphicon-pencil"></span> Enter Notes Below</h2>
+                        <h2><span className="glyphicon glyphicon-pencil"></span> Enter Notes</h2>
                         <div className="col-md-6 col-sm-12">
                             <iframe src={`https://www.youtube.com/embed/${this.state.videoId}`} frameBorder="0"></iframe>
                         </div>

@@ -1,7 +1,12 @@
 main {
     background: linear-gradient(131deg, #ddd, #f0f0f0);
-    padding-top: 2em;
+
+    padding-bottom: 2em;
     text-align: center;
+    .searchbox {
+        // background: rgb(228, 228, 228);
+        padding-bottom: 2em;
+    }
     input {
         border: none;
         font-size: 1.5em;
@@ -26,7 +31,7 @@ main {
         color: white;
         cursor: none;
         font-size: 1.5em;
-        margin: 2em 0;
+        padding: 2em 0 2em 0;
         text-shadow: 1px 1px 15px lightslategray, 
                3px 3px 5px lightgrey;
     }
@@ -55,6 +60,7 @@ main {
         margin: 1em 0;
         padding: 1em 2em;
         box-shadow: 2px 2px 3px 1px #ccc;
+        text-shadow: 2px 2px 8px darken( rgb(65, 0, 145), 5%);
         &:hover {
             background: linear-gradient(131deg, rgb(41, 3, 167), rgb(115, 0, 247));
             color: white;

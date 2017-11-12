@@ -2,13 +2,13 @@
     background: linear-gradient(131deg, rgb(41, 3, 167), rgb(115, 0, 247));
     color: white;
     min-height: 200px;
-    padding-top: 2em;
+    padding: 4em 0;
     text-align: center;
     input {
         border: none;
         color: #121212;
         font-size: 1.5em;
-        width: 80%;
+        width: 70%;
         padding: 1rem;
         border-radius: 2rem;
         &.input--shadow {
@@ -29,7 +29,8 @@
         color: white;
         cursor: none;
         font-size: 1.5em;
-        padding-bottom: 1em;
+        margin: 0;
+        padding:0 0 1.5em 0;
         text-shadow: 2px 2px 8px darken( rgb(65, 0, 145), 10%)
     }
 }
