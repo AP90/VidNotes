@@ -1,0 +1,14 @@
+.notes {
+    background: linear-gradient(131deg, rgb(217, 197, 239), rgb(108, 75, 210));
+    min-height: 100px;
+    padding: 2em 1em;
+}
+
+.notes--note {
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 7px 1px darken(rgb(108, 75, 210), 5%);
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding: 1em;
+}

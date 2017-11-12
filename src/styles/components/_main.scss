@@ -1,0 +1,63 @@
+main {
+    background: linear-gradient(131deg, #ddd, #f0f0f0);
+    padding-top: 2em;
+    text-align: center;
+    input {
+        border: none;
+        font-size: 1.5em;
+        width: 73%;
+        padding: 1rem;
+        border-radius: 2rem;
+        &.input--shadow {
+            box-shadow: 2px 2px 3px 1px #ccc;
+        }
+    }
+    .btn--search{
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2em;
+        padding-left: .5em;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
+        vertical-align: bottom;
+    }
+
+    h2 {
+        color: white;
+        cursor: none;
+        font-size: 1.5em;
+        margin: 2em 0;
+        text-shadow: 1px 1px 15px lightslategray, 
+               3px 3px 5px lightgrey;
+    }
+
+    iframe {
+        width: 95%;
+        height: 250px;
+    }
+    textarea {
+        border: none;
+        box-shadow: 2px 2px 3px 1px #ccc;
+        display: inline-block;
+        font-size: 1.2em;
+        margin-top: 2em;
+        max-width: 95%;
+        min-width: 95%;
+        padding: 1rem;
+        resize: none;
+    }
+    .btn--addnote {
+        background: linear-gradient(131deg, rgb(217, 197, 239), rgb(108, 75, 210));
+        border: none;
+        border-radius: 2rem;
+        color: white;
+        font-size: 1.2em;
+        margin: 1em 0;
+        padding: 1em 2em;
+        box-shadow: 2px 2px 3px 1px #ccc;
+        &:hover {
+            background: linear-gradient(131deg, rgb(41, 3, 167), rgb(115, 0, 247));
+            color: white;
+        }
+    }
+}

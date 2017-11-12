@@ -1,0 +1,35 @@
+.email {
+    background: linear-gradient(131deg, rgb(41, 3, 167), rgb(115, 0, 247));
+    color: white;
+    min-height: 200px;
+    padding-top: 2em;
+    text-align: center;
+    input {
+        border: none;
+        color: #121212;
+        font-size: 1.5em;
+        width: 80%;
+        padding: 1rem;
+        border-radius: 2rem;
+        &.input--shadow {
+            box-shadow: 2px 2px 3px 1px darken( rgb(115, 0, 247), 10%);
+        }
+    }
+    .btn--search{
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2em;
+        padding-left: .5em;
+        text-shadow: 2px 2px 8px darken( rgb(81, 3, 177), 10%);
+        vertical-align: bottom;
+    }
+
+    h2 {
+        color: white;
+        cursor: none;
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        text-shadow: 2px 2px 8px darken( rgb(65, 0, 145), 10%)
+    }
+}
