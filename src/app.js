@@ -11,12 +11,31 @@ import Footer from "./components/footer";
 
 
 class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            notes: []
+        }
+    }
+
+    addNote = (note) => {
+        this.setState((prevState, props) => {
+            return {notes: [...this.state.notes, note]}
+        });
+        setTimeout(() => {
+            console.log(this.state.notes);
+        }, 500)
+    }
+        
+
+
     render() {
         return (
             <div>
                 <Navbar />
-                <Main />
-                <Notes />
+                <Main addNote={this.addNote}/>
+                <Notes notes={this.state.notes}/>
                 <Email />
                 <Footer />
             </div>

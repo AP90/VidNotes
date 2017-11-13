@@ -3,7 +3,9 @@ import React from "react";
 const Navbar = () => {
     return (
         <nav>
-            <h1>VidNotes</h1>
+            <div className="wrapper">
+                <div className="logo"></div>
+            </div>
         </nav>
     );
 };

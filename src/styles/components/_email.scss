@@ -11,8 +11,12 @@
         width: 70%;
         padding: 1rem;
         border-radius: 2rem;
+        text-align: center;
         &.input--shadow {
             box-shadow: 2px 2px 3px 1px darken( rgb(115, 0, 247), 10%);
+        }
+        &::placeholder {
+            color: lightgrey;
         }
     }
     .btn--search{
@@ -33,4 +37,12 @@
         padding:0 0 1.5em 0;
         text-shadow: 2px 2px 8px darken( rgb(65, 0, 145), 10%)
     }
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .email {
+        input {
+            width: 45%;
+        }
+    }     
 }

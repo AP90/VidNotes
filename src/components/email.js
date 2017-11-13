@@ -5,7 +5,7 @@ export default class Email extends React.Component {
         return (
             <div className="email">
                 <h2><span className="glyphicon glyphicon-envelope"></span> Send</h2>
-                    <input type="text" className="input--shadow" placeholder=""/>
+                    <input type="text" className="input--shadow" placeholder="youremail@example.com"/>
                     <button className="btn--search">
                         <span className="glyphicon glyphicon-send"></span>
                     </button>

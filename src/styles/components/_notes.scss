@@ -23,3 +23,17 @@ h2 {
     padding:0 0 1em 0;
     text-shadow: 2px 2px 8px darken( rgb(65, 0, 145), 10%);
 }
+
+p {
+    color: white;
+    padding-top: 1em;
+}
+
+
+@media (min-width: $desktop-breakpoint) {
+    .notes--note {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 1em;
+    }     
+}

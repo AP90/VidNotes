@@ -26,12 +26,27 @@ export default class Main extends React.Component {
         }
     }
 
+    handleAddNote = () => {
+        let note = $("textarea").val();
+        if (note.length > 0) {
+            this.props.addNote(note);
+            $("textarea").val("");
+        } else {
+            alert("please enter a note");
+        }
+    }
+
     render() {
         return (
             <main>
                 <div className="searchbox">
                 <h2><span className="glyphicon glyphicon-globe"></span> Enter URL</h2>
-                    <input type="text" className="input--shadow input--search" onKeyPress={this.handleKeyPress}/>
+                    <input 
+                        type="text" 
+                        className="input--shadow input--search" 
+                        onKeyPress={this.handleKeyPress} 
+                        placeholder="https://www.youtube.com/watch?v=9rPOuZ4vY50"
+                    />
                     <button className="btn--search" onClick={this.handleOnClick}>
                         <span className="glyphicon glyphicon-search"></span>
                     </button>
@@ -46,7 +61,7 @@ export default class Main extends React.Component {
                         <div className="col-md-6 col-sm-12">
                             <textarea name="" id="" cols="50" rows="5"></textarea>
                             <div>    
-                                <button className="btn--addnote"><span className="glyphicon glyphicon-plus"></span> Add Note</button>
+                                <button className="btn--addnote" onClick={this.handleAddNote}><span className="glyphicon glyphicon-plus"></span> Add Note</button>
                             </div>
                         </div>
                     </div>
