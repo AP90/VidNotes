@@ -16,6 +16,9 @@ main {
         &.input--shadow {
             box-shadow: 2px 2px 3px 1px #ccc;
         }
+        // &::placeholder {
+        //     color: lightgrey;
+        // }
     }
     .btn--search{
         background: none;
@@ -26,10 +29,14 @@ main {
         text-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
         vertical-align: bottom;
     }
+    hr {
+        border: 1px solid lightgrey;
+        margin-bottom: 0;
+    }
 
     h2 {
         color: white;
-        cursor: none;
+        cursor: default;
         font-size: 1.5em;
         padding: 2em 0 2em 0;
         text-shadow: 1px 1px 15px lightslategray, 
@@ -42,6 +49,7 @@ main {
     }
     textarea {
         border: none;
+        border-radius: 2rem;
         box-shadow: 2px 2px 3px 1px #ccc;
         display: inline-block;
         font-size: 1.2em;

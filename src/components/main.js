@@ -5,8 +5,24 @@ export default class Main extends React.Component {
         super(props);
 
         this.state = {
-            YTUrl: "https://www.youtube.com/embed/9rPOuZ4vY50",
-            videoId: "9rPOuZ4vY50"
+            url: "https://www.youtube.com/embed/9rPOuZ4vY50"
+        }
+    }
+    
+    handleOnClick = () => {
+        let userUrl = $(".input--search").val();
+        if (userUrl.indexOf("https://www.youtube.com/watch?v=") === - 1) {
+            alert("Please enter a valid YouTube url");
+        } else {
+            let url = userUrl.replace("watch?v=", "embed/");
+            this.setState({url});
+            $(".input--search").val("");
+        }
+    }
+
+    handleKeyPress = (event) => {
+        if (event.key === 'Enter'){
+            this.handleOnClick();
         }
     }
 
@@ -15,16 +31,17 @@ export default class Main extends React.Component {
             <main>
                 <div className="searchbox">
                 <h2><span className="glyphicon glyphicon-globe"></span> Enter URL</h2>
-                    <input type="text" className="input--shadow" placeholder=""/>
-                    <button className="btn--search">
+                    <input type="text" className="input--shadow input--search" onKeyPress={this.handleKeyPress}/>
+                    <button className="btn--search" onClick={this.handleOnClick}>
                         <span className="glyphicon glyphicon-search"></span>
                     </button>
                 </div>
+                <hr></hr>
                 <div className="container">
                     <div className="row">
                         <h2><span className="glyphicon glyphicon-pencil"></span> Enter Notes</h2>
                         <div className="col-md-6 col-sm-12">
-                            <iframe src={`https://www.youtube.com/embed/${this.state.videoId}`} frameBorder="0"></iframe>
+                            <iframe src={this.state.url} frameBorder="0"></iframe>
                         </div>
                         <div className="col-md-6 col-sm-12">
                             <textarea name="" id="" cols="50" rows="5"></textarea>

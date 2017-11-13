@@ -10,3 +10,7 @@ button {
 button:disabled {
     cursor: default;
 }
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
