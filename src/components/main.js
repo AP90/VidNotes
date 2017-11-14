@@ -8,8 +8,7 @@ export default class Main extends React.Component {
             url: "https://www.youtube.com/embed/9rPOuZ4vY50"
         }
     }
-    
-    handleOnClick = () => {
+y    handleOnClick = () => {
         let userUrl = $(".input--search").val();
         if (userUrl.indexOf("https://www.youtube.com/watch?v=") === - 1) {
             $(".searchbox__error").show();
@@ -19,7 +18,7 @@ export default class Main extends React.Component {
             }, 1000);
         } else {
             // create embed link and prevent default full screen in mobile
-            let url = userUrl.replace("watch?v=", "embed/").concat("?playsinline=1");
+            let url = userUrl.replace("watch?v=", "embed/").concat("?playsinline=1&webkit-playsinline=1");
             console.log(url);
             this.setState({url});
             $(".searchbox__error").hide();
@@ -71,7 +70,7 @@ export default class Main extends React.Component {
                     <div className="row">
                         <h2><span className="glyphicon glyphicon-pencil"></span> Enter Notes</h2>
                         <div className="col-md-6 col-sm-12">
-                            <iframe src={this.state.url} frameBorder="0"></iframe>
+                            <iframe src={this.state.url} frameBorder="0" playsinline="1" webkit-playsinline="1"></iframe>
                         </div>
                         <div className="col-md-6 col-sm-12">
                             <textarea name="" id="" cols="50" rows="5"></textarea>
