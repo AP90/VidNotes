@@ -12,14 +12,15 @@ export default class Main extends React.Component {
     handleOnClick = () => {
         let userUrl = $(".input--search").val();
         if (userUrl.indexOf("https://www.youtube.com/watch?v=") === - 1) {
-            // alert("Please enter a valid YouTube url");
             $(".searchbox__error").show();
             $(".input--search").addClass("animated shake")
             setTimeout(() => {
                 $(".input--search").removeClass("animated shake");
             }, 1000);
         } else {
-            let url = userUrl.replace("watch?v=", "embed/");
+            // create embed link and prevent default full screen in mobile
+            let url = userUrl.replace("watch?v=", "embed/").concat("?playsinline=1");
+            console.log(url);
             this.setState({url});
             $(".searchbox__error").hide();
             $(".input--search").val("");
