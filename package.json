@@ -6,7 +6,8 @@
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "start": "npm run build"
+    "postinstall": "webpack -p",
+    "start": "node server/server.js"
   },
   "license": "MIT",
   "dependencies": {
