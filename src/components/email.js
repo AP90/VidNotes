@@ -35,7 +35,7 @@ export default class Email extends React.Component {
         return (
             <div className="email">
                 <h2><span className="glyphicon glyphicon-envelope"></span> Send</h2>
-                    <p className="animated fadeIn email__error">Please enter a valid YouTube URL</p>
+                    <p className="animated fadeIn email__error">Please enter a valid email address</p>
                     <input type="text" className="input--shadow input--email" placeholder="youremail@example.com"/>
                     <button className="btn--search" onClick={this.handleEmailBtnClick}>
                         <span className="glyphicon glyphicon-send"></span>

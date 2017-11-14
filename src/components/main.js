@@ -10,7 +10,7 @@ export default class Main extends React.Component {
     }
 y    handleOnClick = () => {
         let userUrl = $(".input--search").val();
-        if (userUrl.indexOf("https://www.youtube.com/watch?v=") === - 1) {
+        if (userUrl.indexOf("youtube.com/watch?v=") === - 1) {
             $(".searchbox__error").show();
             $(".input--search").addClass("animated shake")
             setTimeout(() => {
