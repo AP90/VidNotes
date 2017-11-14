@@ -2,14 +2,14 @@
     background: linear-gradient(131deg, rgb(41, 3, 167), rgb(115, 0, 247));
     color: white;
     min-height: 200px;
-    padding: 4em 0;
+    padding: 4em 0 6em 0;
     text-align: center;
     input {
         border: none;
         color: #121212;
         font-size: 1.5em;
         width: 70%;
-        padding: 1rem;
+        padding: 1em;
         border-radius: 2rem;
         text-align: center;
         &.input--shadow {
@@ -23,7 +23,7 @@
         background: none;
         border: none;
         color: white;
-        font-size: 2em;
+        font-size: 3em;
         padding-left: .5em;
         text-shadow: 2px 2px 8px darken( rgb(81, 3, 177), 10%);
         vertical-align: bottom;
@@ -37,6 +37,12 @@
         padding:0 0 1.5em 0;
         text-shadow: 2px 2px 8px darken( rgb(65, 0, 145), 10%)
     }
+
+    .email__error {
+        display: none;
+        margin-bottom: 1em;
+    }
+
 }
 
 @media (min-width: $desktop-breakpoint) {

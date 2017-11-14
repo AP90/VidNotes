@@ -10,6 +10,7 @@ export default class Email extends React.Component {
         let emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
         if (email.match(emailformat)) {  
+            $(".email__error").hide();
             let notes = this.props.notes.map((note) => {
                 return `<p>${note}</p>`;
             }).join("");
@@ -21,6 +22,7 @@ export default class Email extends React.Component {
             $(".input--email").val("");
         } else {
             // alert("please enter a valid email");
+            $(".email__error").show();
             $(".input--email").addClass("animated shake")
             setTimeout(() => {
                 $(".input--email").removeClass("animated shake");
@@ -33,10 +35,12 @@ export default class Email extends React.Component {
         return (
             <div className="email">
                 <h2><span className="glyphicon glyphicon-envelope"></span> Send</h2>
+                    <p className="animated fadeIn email__error">Please enter a valid YouTube URL</p>
                     <input type="text" className="input--shadow input--email" placeholder="youremail@example.com"/>
                     <button className="btn--search" onClick={this.handleEmailBtnClick}>
                         <span className="glyphicon glyphicon-send"></span>
                     </button>
+                    
             </div>
         )
     }

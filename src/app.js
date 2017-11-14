@@ -23,9 +23,6 @@ class App extends React.Component {
         this.setState((prevState, props) => {
             return {notes: [...this.state.notes, note]}
         });
-        setTimeout(() => {
-            console.log(this.state.notes);
-        }, 500)
     }
         
 

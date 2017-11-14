@@ -5,8 +5,13 @@ main {
     text-align: center;
     .searchbox {
         // background: rgb(228, 228, 228);
-        padding-bottom: 2em;
+        padding-bottom: 1em;
     }
+    .searchbox__error {
+        display: none;
+        margin-bottom: 1em;
+    }
+
     input {
         border: none;
         border-radius: 2rem;
@@ -24,7 +29,7 @@ main {
         background: none;
         border: none;
         color: white;
-        font-size: 2em;
+        font-size: 3em;
         padding-left: .5em;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
         vertical-align: bottom;
@@ -38,7 +43,7 @@ main {
         color: white;
         cursor: default;
         font-size: 1.5em;
-        padding: 2em 0 2em 0;
+        padding: 2em 0 1.5em 0;
         text-shadow: 1px 1px 15px lightslategray, 
                3px 3px 5px lightgrey;
     }

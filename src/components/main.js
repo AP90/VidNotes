@@ -13,6 +13,7 @@ export default class Main extends React.Component {
         let userUrl = $(".input--search").val();
         if (userUrl.indexOf("https://www.youtube.com/watch?v=") === - 1) {
             // alert("Please enter a valid YouTube url");
+            $(".searchbox__error").show();
             $(".input--search").addClass("animated shake")
             setTimeout(() => {
                 $(".input--search").removeClass("animated shake");
@@ -20,6 +21,7 @@ export default class Main extends React.Component {
         } else {
             let url = userUrl.replace("watch?v=", "embed/");
             this.setState({url});
+            $(".searchbox__error").hide();
             $(".input--search").val("");
         }
     }
@@ -40,7 +42,10 @@ export default class Main extends React.Component {
                 $(".btn--addnote").removeClass("animated bounce");
             }, 1000);
         } else {
-            alert("please enter a note");
+            $(".btn--addnote").addClass("animated shake");
+            setTimeout(() => {
+                $(".btn--addnote").removeClass("animated shake");
+            }, 1000);
         }
     }
 
@@ -49,6 +54,7 @@ export default class Main extends React.Component {
             <main>
                 <div className="searchbox">
                 <h2><span className="glyphicon glyphicon-globe"></span> Enter URL</h2>
+                    <p className="animated fadeIn searchbox__error">Please enter a valid YouTube URL</p>
                     <input 
                         type="text" 
                         className="input--shadow input--search" 
