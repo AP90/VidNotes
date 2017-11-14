@@ -36,7 +36,7 @@ class App extends React.Component {
                 <Navbar />
                 <Main addNote={this.addNote}/>
                 <Notes notes={this.state.notes}/>
-                <Email />
+                <Email notes={this.state.notes}/>
                 <Footer />
             </div>
         )

@@ -12,7 +12,11 @@ export default class Main extends React.Component {
     handleOnClick = () => {
         let userUrl = $(".input--search").val();
         if (userUrl.indexOf("https://www.youtube.com/watch?v=") === - 1) {
-            alert("Please enter a valid YouTube url");
+            // alert("Please enter a valid YouTube url");
+            $(".input--search").addClass("animated shake")
+            setTimeout(() => {
+                $(".input--search").removeClass("animated shake");
+            }, 1000);
         } else {
             let url = userUrl.replace("watch?v=", "embed/");
             this.setState({url});
@@ -30,7 +34,11 @@ export default class Main extends React.Component {
         let note = $("textarea").val();
         if (note.length > 0) {
             this.props.addNote(note);
+            $(".btn--addnote").addClass("animated bounce");
             $("textarea").val("");
+            setTimeout(() => {
+                $(".btn--addnote").removeClass("animated bounce");
+            }, 1000);
         } else {
             alert("please enter a note");
         }

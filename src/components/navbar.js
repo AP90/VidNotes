@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className="wrapper">
-                <div className="logo"></div>
+                <div className="animated bounceIn logo"></div>
             </div>
         </nav>
     );

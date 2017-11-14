@@ -3,7 +3,7 @@ import React from "react";
 
 const Notes = (props) => {    
     const noteList = props.notes.map((note, index) => 
-        <div className="notes--note" key={index}>{note}</div>
+        <div className="notes--note animated fadeIn" key={index}>{note}</div>
     );
 
     return (
