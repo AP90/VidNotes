@@ -8,17 +8,23 @@ export default class Main extends React.Component {
             url: "https://www.youtube.com/embed/9rPOuZ4vY50"
         }
     }
-y    handleOnClick = () => {
+    handleOnClick = () => {
         let userUrl = $(".input--search").val();
-        if (userUrl.indexOf("youtube.com") === - 1) {
+        if (userUrl.indexOf("youtube") === -1) {
             $(".searchbox__error").show();
             $(".input--search").addClass("animated shake")
             setTimeout(() => {
                 $(".input--search").removeClass("animated shake");
             }, 1000);
         } else {
+            // check for mobile version
+            if (userUrl.indexOf("https://m.") !== -1) {
+                userUrl = userUrl.replace("https://m.", "https://www.");
+                console.log(userUrl);
+            }
             // create embed link and prevent default full screen in mobile
-            let url = userUrl.replace("watch?v=", "embed/").concat("?playsinline=1&webkit-playsinline=1");
+            let url = userUrl.replace("watch?v=", "embed/");
+            // .concat("?playsinline=1&webkit-playsinline=1");
             console.log(url);
             this.setState({url});
             $(".searchbox__error").hide();
@@ -70,7 +76,7 @@ y    handleOnClick = () => {
                     <div className="row">
                         <h2><span className="glyphicon glyphicon-pencil"></span> Enter Notes</h2>
                         <div className="col-md-6 col-sm-12">
-                            <iframe src={this.state.url} frameBorder="0" playsinline="1" webkit-playsinline="1"></iframe>
+                            <iframe src={this.state.url} frameBorder="0"></iframe>
                         </div>
                         <div className="col-md-6 col-sm-12">
                             <textarea name="" id="" cols="50" rows="5"></textarea>
