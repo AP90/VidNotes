@@ -16,8 +16,8 @@ main {
         border: none;
         border-radius: 2rem;
         font-size: 1.5em;
-        padding: 2rem;
-        width: 73%;
+        padding: 1rem;
+        width: 70%;
         &.input--shadow {
             box-shadow: 2px 2px 3px 1px #ccc;
         }
@@ -29,7 +29,7 @@ main {
         background: none;
         border: none;
         color: white;
-        font-size: 3em;
+        font-size: 2em;
         padding-left: .5em;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
         vertical-align: bottom;
