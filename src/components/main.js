@@ -6,9 +6,10 @@ export default class Main extends React.Component {
 
         
         this.state = {
-            url: "https://www.youtube.com/watch?v=9rPOuZ4vY50"
+            url: "https://www.youtube.com/embed/9rPOuZ4vY50"
         }
     }
+
     handleOnClick = () => {
         let userUrl = $(".input--search").val();
         if (userUrl.indexOf("youtube") === -1) {
@@ -21,7 +22,6 @@ export default class Main extends React.Component {
             // check for mobile version
             if (userUrl.indexOf("https://m.") !== -1) {
                 userUrl = userUrl.replace("https://m.", "https://www.");
-                console.log(userUrl);
             }
             // create embed link and prevent default full screen in mobile
             let url = userUrl.replace("watch?v=", "embed/");
