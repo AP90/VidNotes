@@ -6,7 +6,7 @@ export default class Main extends React.Component {
 
         
         this.state = {
-            url: "https://www.youtube.com/watch?v=6sQDTgOqh-I"
+            url: "https://www.youtube.com/watch?v=BncMF2aTL0w"
         }
     }
     handleOnClick = () => {
