@@ -5,7 +5,7 @@ export default class Main extends React.Component {
         super(props);
 
         this.state = {
-            url: "https://www.youtube.com/embed/9rPOuZ4vY50"
+            url: "https://www.youtube.com/watch?v=6sQDTgOqh-I"
         }
     }
     handleOnClick = () => {
