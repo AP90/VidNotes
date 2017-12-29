@@ -25,8 +25,7 @@ export default class Main extends React.Component {
             }
             // create embed link and prevent default full screen in mobile
             let url = userUrl.replace("watch?v=", "embed/");
-            // .concat("?playsinline=1&webkit-playsinline=1");
-            console.log(url);
+
             this.setState({url});
             $(".searchbox__error").hide();
             $(".input--search").val("");
