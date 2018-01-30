@@ -30,7 +30,6 @@ export default class Email extends React.Component {
         }        
     }
 
-
     render() {
         return (
             <div className="email">
@@ -40,7 +39,6 @@ export default class Email extends React.Component {
                     <button className="btn--search" onClick={this.handleEmailBtnClick}>
                         <span className="glyphicon glyphicon-send"></span>
                     </button>
-                    
             </div>
         )
     }

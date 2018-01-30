@@ -3,8 +3,7 @@ import React from "react";
 export default class Main extends React.Component {
     constructor(props) {
         super(props);
-
-        
+ 
         this.state = {
             url: "https://www.youtube.com/embed/BncMF2aTL0w"
         }
