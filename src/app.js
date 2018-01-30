@@ -8,8 +8,6 @@ import Notes from "./components/notes";
 import Email from "./components/email";
 import Footer from "./components/footer";
 
-
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -24,9 +22,7 @@ class App extends React.Component {
             return {notes: [...this.state.notes, note]}
         });
     }
-        
-
-
+    
     render() {
         return (
             <div>
@@ -39,8 +35,5 @@ class App extends React.Component {
         )
     };
 };
-
-
-
 
 ReactDOM.render(<App />, document.getElementById("app"));
