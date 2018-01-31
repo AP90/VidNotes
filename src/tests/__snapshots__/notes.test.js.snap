@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notes /> should render notes component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Notes
+    notes={
+        Array [
+            "this",
+            "is",
+            "a",
+            "test",
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          <span
+                    className="glyphicon glyphicon-pencil"
+          />
+           Notes
+</h2>,
+        Array [
+          <div
+            className="notes--note animated fadeIn"
+>
+            this
+</div>,
+          <div
+            className="notes--note animated fadeIn"
+>
+            is
+</div>,
+          <div
+            className="notes--note animated fadeIn"
+>
+            a
+</div>,
+          <div
+            className="notes--note animated fadeIn"
+>
+            test
+</div>,
+        ],
+      ],
+      "className": "notes",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="glyphicon glyphicon-pencil"
+/>,
+            " Notes",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "glyphicon glyphicon-pencil",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+          " Notes",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": "this",
+          "className": "notes--note animated fadeIn",
+        },
+        "ref": null,
+        "rendered": "this",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": "is",
+          "className": "notes--note animated fadeIn",
+        },
+        "ref": null,
+        "rendered": "is",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": "a",
+          "className": "notes--note animated fadeIn",
+        },
+        "ref": null,
+        "rendered": "a",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": "test",
+          "className": "notes--note animated fadeIn",
+        },
+        "ref": null,
+        "rendered": "test",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            <span
+                        className="glyphicon glyphicon-pencil"
+            />
+             Notes
+</h2>,
+          Array [
+            <div
+              className="notes--note animated fadeIn"
+>
+              this
+</div>,
+            <div
+              className="notes--note animated fadeIn"
+>
+              is
+</div>,
+            <div
+              className="notes--note animated fadeIn"
+>
+              a
+</div>,
+            <div
+              className="notes--note animated fadeIn"
+>
+              test
+</div>,
+          ],
+        ],
+        "className": "notes",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="glyphicon glyphicon-pencil"
+/>,
+              " Notes",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "glyphicon glyphicon-pencil",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+            " Notes",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": "this",
+            "className": "notes--note animated fadeIn",
+          },
+          "ref": null,
+          "rendered": "this",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "is",
+            "className": "notes--note animated fadeIn",
+          },
+          "ref": null,
+          "rendered": "is",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": "a",
+            "className": "notes--note animated fadeIn",
+          },
+          "ref": null,
+          "rendered": "a",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": "test",
+            "className": "notes--note animated fadeIn",
+          },
+          "ref": null,
+          "rendered": "test",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;

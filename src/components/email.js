@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default class Email extends React.Component {
+class Email extends React.Component {
 
     handleEmailBtnClick = () => {
         let email = $(".input--email").val();
@@ -43,3 +43,5 @@ export default class Email extends React.Component {
         )
     }
 }
+
+export default Email;

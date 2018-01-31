@@ -1,0 +1,947 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main /> should render main component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Main />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="searchbox"
+>
+          <h2>
+                    <span
+                              className="glyphicon glyphicon-globe"
+                    />
+                     Enter URL
+          </h2>
+          <p
+                    className="animated fadeIn searchbox__error"
+          >
+                    Please enter a valid YouTube URL
+          </p>
+          <input
+                    className="input--shadow input--search"
+                    onKeyPress={[Function]}
+                    placeholder="https://www.youtube.com/watch?v=9rPOuZ4vY50"
+                    type="text"
+          />
+          <button
+                    className="btn--search"
+                    onClick={[Function]}
+          >
+                    <span
+                              className="glyphicon glyphicon-search"
+                    />
+          </button>
+</div>,
+        <hr />,
+        <div
+          className="container"
+>
+          <div
+                    className="row"
+          >
+                    <h2>
+                              <span
+                                        className="glyphicon glyphicon-pencil"
+                              />
+                               Enter Notes
+                    </h2>
+                    <div
+                              className="col-md-6 col-sm-12"
+                    >
+                              <iframe
+                                        frameBorder="0"
+                                        src="https://www.youtube.com/embed/BncMF2aTL0w"
+                              />
+                    </div>
+                    <div
+                              className="col-md-6 col-sm-12"
+                    >
+                              <textarea
+                                        cols="50"
+                                        id=""
+                                        name=""
+                                        rows="5"
+                              />
+                              <div>
+                                        <button
+                                                  className="btn--addnote"
+                                                  onClick={[Function]}
+                                        >
+                                                  <span
+                                                            className="glyphicon glyphicon-plus"
+                                                  />
+                                                   Add Note
+                                        </button>
+                              </div>
+                    </div>
+          </div>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              <span
+                            className="glyphicon glyphicon-globe"
+              />
+               Enter URL
+</h2>,
+            <p
+              className="animated fadeIn searchbox__error"
+>
+              Please enter a valid YouTube URL
+</p>,
+            <input
+              className="input--shadow input--search"
+              onKeyPress={[Function]}
+              placeholder="https://www.youtube.com/watch?v=9rPOuZ4vY50"
+              type="text"
+/>,
+            <button
+              className="btn--search"
+              onClick={[Function]}
+>
+              <span
+                            className="glyphicon glyphicon-search"
+              />
+</button>,
+          ],
+          "className": "searchbox",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="glyphicon glyphicon-globe"
+/>,
+                " Enter URL",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "glyphicon glyphicon-globe",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              " Enter URL",
+            ],
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please enter a valid YouTube URL",
+              "className": "animated fadeIn searchbox__error",
+            },
+            "ref": null,
+            "rendered": "Please enter a valid YouTube URL",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "input--shadow input--search",
+              "onKeyPress": [Function],
+              "placeholder": "https://www.youtube.com/watch?v=9rPOuZ4vY50",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span
+                className="glyphicon glyphicon-search"
+/>,
+              "className": "btn--search",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "glyphicon glyphicon-search",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="row"
+>
+            <h2>
+                        <span
+                                    className="glyphicon glyphicon-pencil"
+                        />
+                         Enter Notes
+            </h2>
+            <div
+                        className="col-md-6 col-sm-12"
+            >
+                        <iframe
+                                    frameBorder="0"
+                                    src="https://www.youtube.com/embed/BncMF2aTL0w"
+                        />
+            </div>
+            <div
+                        className="col-md-6 col-sm-12"
+            >
+                        <textarea
+                                    cols="50"
+                                    id=""
+                                    name=""
+                                    rows="5"
+                        />
+                        <div>
+                                    <button
+                                                className="btn--addnote"
+                                                onClick={[Function]}
+                                    >
+                                                <span
+                                                            className="glyphicon glyphicon-plus"
+                                                />
+                                                 Add Note
+                                    </button>
+                        </div>
+            </div>
+</div>,
+          "className": "container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                <span
+                                className="glyphicon glyphicon-pencil"
+                />
+                 Enter Notes
+</h2>,
+              <div
+                className="col-md-6 col-sm-12"
+>
+                <iframe
+                                frameBorder="0"
+                                src="https://www.youtube.com/embed/BncMF2aTL0w"
+                />
+</div>,
+              <div
+                className="col-md-6 col-sm-12"
+>
+                <textarea
+                                cols="50"
+                                id=""
+                                name=""
+                                rows="5"
+                />
+                <div>
+                                <button
+                                                className="btn--addnote"
+                                                onClick={[Function]}
+                                >
+                                                <span
+                                                                className="glyphicon glyphicon-plus"
+                                                />
+                                                 Add Note
+                                </button>
+                </div>
+</div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="glyphicon glyphicon-pencil"
+/>,
+                  " Enter Notes",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "glyphicon glyphicon-pencil",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                " Enter Notes",
+              ],
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <iframe
+                  frameBorder="0"
+                  src="https://www.youtube.com/embed/BncMF2aTL0w"
+/>,
+                "className": "col-md-6 col-sm-12",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "frameBorder": "0",
+                  "src": "https://www.youtube.com/embed/BncMF2aTL0w",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "iframe",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <textarea
+                    cols="50"
+                    id=""
+                    name=""
+                    rows="5"
+/>,
+                  <div>
+                    <button
+                                        className="btn--addnote"
+                                        onClick={[Function]}
+                    >
+                                        <span
+                                                            className="glyphicon glyphicon-plus"
+                                        />
+                                         Add Note
+                    </button>
+</div>,
+                ],
+                "className": "col-md-6 col-sm-12",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "cols": "50",
+                    "id": "",
+                    "name": "",
+                    "rows": "5",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "textarea",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <button
+                      className="btn--addnote"
+                      onClick={[Function]}
+>
+                      <span
+                                            className="glyphicon glyphicon-plus"
+                      />
+                       Add Note
+</button>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="glyphicon glyphicon-plus"
+/>,
+                        " Add Note",
+                      ],
+                      "className": "btn--addnote",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "glyphicon glyphicon-plus",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "span",
+                      },
+                      " Add Note",
+                    ],
+                    "type": "button",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="searchbox"
+>
+            <h2>
+                        <span
+                                    className="glyphicon glyphicon-globe"
+                        />
+                         Enter URL
+            </h2>
+            <p
+                        className="animated fadeIn searchbox__error"
+            >
+                        Please enter a valid YouTube URL
+            </p>
+            <input
+                        className="input--shadow input--search"
+                        onKeyPress={[Function]}
+                        placeholder="https://www.youtube.com/watch?v=9rPOuZ4vY50"
+                        type="text"
+            />
+            <button
+                        className="btn--search"
+                        onClick={[Function]}
+            >
+                        <span
+                                    className="glyphicon glyphicon-search"
+                        />
+            </button>
+</div>,
+          <hr />,
+          <div
+            className="container"
+>
+            <div
+                        className="row"
+            >
+                        <h2>
+                                    <span
+                                                className="glyphicon glyphicon-pencil"
+                                    />
+                                     Enter Notes
+                        </h2>
+                        <div
+                                    className="col-md-6 col-sm-12"
+                        >
+                                    <iframe
+                                                frameBorder="0"
+                                                src="https://www.youtube.com/embed/BncMF2aTL0w"
+                                    />
+                        </div>
+                        <div
+                                    className="col-md-6 col-sm-12"
+                        >
+                                    <textarea
+                                                cols="50"
+                                                id=""
+                                                name=""
+                                                rows="5"
+                                    />
+                                    <div>
+                                                <button
+                                                            className="btn--addnote"
+                                                            onClick={[Function]}
+                                                >
+                                                            <span
+                                                                        className="glyphicon glyphicon-plus"
+                                                            />
+                                                             Add Note
+                                                </button>
+                                    </div>
+                        </div>
+            </div>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                <span
+                                className="glyphicon glyphicon-globe"
+                />
+                 Enter URL
+</h2>,
+              <p
+                className="animated fadeIn searchbox__error"
+>
+                Please enter a valid YouTube URL
+</p>,
+              <input
+                className="input--shadow input--search"
+                onKeyPress={[Function]}
+                placeholder="https://www.youtube.com/watch?v=9rPOuZ4vY50"
+                type="text"
+/>,
+              <button
+                className="btn--search"
+                onClick={[Function]}
+>
+                <span
+                                className="glyphicon glyphicon-search"
+                />
+</button>,
+            ],
+            "className": "searchbox",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="glyphicon glyphicon-globe"
+/>,
+                  " Enter URL",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "glyphicon glyphicon-globe",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                " Enter URL",
+              ],
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Please enter a valid YouTube URL",
+                "className": "animated fadeIn searchbox__error",
+              },
+              "ref": null,
+              "rendered": "Please enter a valid YouTube URL",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "input--shadow input--search",
+                "onKeyPress": [Function],
+                "placeholder": "https://www.youtube.com/watch?v=9rPOuZ4vY50",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span
+                  className="glyphicon glyphicon-search"
+/>,
+                "className": "btn--search",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "glyphicon glyphicon-search",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="row"
+>
+              <h2>
+                            <span
+                                          className="glyphicon glyphicon-pencil"
+                            />
+                             Enter Notes
+              </h2>
+              <div
+                            className="col-md-6 col-sm-12"
+              >
+                            <iframe
+                                          frameBorder="0"
+                                          src="https://www.youtube.com/embed/BncMF2aTL0w"
+                            />
+              </div>
+              <div
+                            className="col-md-6 col-sm-12"
+              >
+                            <textarea
+                                          cols="50"
+                                          id=""
+                                          name=""
+                                          rows="5"
+                            />
+                            <div>
+                                          <button
+                                                        className="btn--addnote"
+                                                        onClick={[Function]}
+                                          >
+                                                        <span
+                                                                      className="glyphicon glyphicon-plus"
+                                                        />
+                                                         Add Note
+                                          </button>
+                            </div>
+              </div>
+</div>,
+            "className": "container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  <span
+                                    className="glyphicon glyphicon-pencil"
+                  />
+                   Enter Notes
+</h2>,
+                <div
+                  className="col-md-6 col-sm-12"
+>
+                  <iframe
+                                    frameBorder="0"
+                                    src="https://www.youtube.com/embed/BncMF2aTL0w"
+                  />
+</div>,
+                <div
+                  className="col-md-6 col-sm-12"
+>
+                  <textarea
+                                    cols="50"
+                                    id=""
+                                    name=""
+                                    rows="5"
+                  />
+                  <div>
+                                    <button
+                                                      className="btn--addnote"
+                                                      onClick={[Function]}
+                                    >
+                                                      <span
+                                                                        className="glyphicon glyphicon-plus"
+                                                      />
+                                                       Add Note
+                                    </button>
+                  </div>
+</div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="glyphicon glyphicon-pencil"
+/>,
+                    " Enter Notes",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "glyphicon glyphicon-pencil",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  " Enter Notes",
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <iframe
+                    frameBorder="0"
+                    src="https://www.youtube.com/embed/BncMF2aTL0w"
+/>,
+                  "className": "col-md-6 col-sm-12",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "frameBorder": "0",
+                    "src": "https://www.youtube.com/embed/BncMF2aTL0w",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "iframe",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <textarea
+                      cols="50"
+                      id=""
+                      name=""
+                      rows="5"
+/>,
+                    <div>
+                      <button
+                                            className="btn--addnote"
+                                            onClick={[Function]}
+                      >
+                                            <span
+                                                                  className="glyphicon glyphicon-plus"
+                                            />
+                                             Add Note
+                      </button>
+</div>,
+                  ],
+                  "className": "col-md-6 col-sm-12",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "cols": "50",
+                      "id": "",
+                      "name": "",
+                      "rows": "5",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "textarea",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <button
+                        className="btn--addnote"
+                        onClick={[Function]}
+>
+                        <span
+                                                className="glyphicon glyphicon-plus"
+                        />
+                         Add Note
+</button>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="glyphicon glyphicon-plus"
+/>,
+                          " Add Note",
+                        ],
+                        "className": "btn--addnote",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "glyphicon glyphicon-plus",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "span",
+                        },
+                        " Add Note",
+                      ],
+                      "type": "button",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;

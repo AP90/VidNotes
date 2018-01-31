@@ -7,7 +7,8 @@
     "build": "webpack",
     "dev-server": "webpack-dev-server",
     "postinstall": "webpack -p",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "test": "jest"
   },
   "license": "MIT",
   "dependencies": {
@@ -33,10 +34,18 @@
     "webpack-dev-server": "2.5.1"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.1",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^20.0.4",
+    "react-test-renderer": "^15.6.2"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/tests/setupTests.js"
   }
 }
