@@ -18,4 +18,3 @@ VidNotes was built using a mobile-first approach as a fully responsive single-pa
 - Bootstrap
 - jQuery
 - EmailJS
-
